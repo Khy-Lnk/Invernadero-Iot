@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "398925482992",
+    "project_id": "invernaderopi",
+    "storage_bucket": "invernaderopi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398925482992:android:2e2cf7914ad21269576b35",
+        "android_client_info": {
+          "package_name": "com.example.invernaderopi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyp_hPAvgcfN8pCKA4fBo7qUsukv0xz8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

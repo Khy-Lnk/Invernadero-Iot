@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/fondo_degradado">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌿 Panel de Control IoT"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/tvAlerta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ ALERTA: TEMPERATURA CRÍTICA ⚠️"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#D32F2F"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+            android:elevation="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/fondo_tarjeta"
+            android:elevation="12dp"
+            android:padding="32dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📊 Sensores en tiempo real"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/tvTemperatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌡️ Temperatura: -- °C"
+                android:textSize="24sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/tvHumedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💧 Humedad: -- %"
+                android:textSize="24sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/tvLuminosidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="☀️ Luminosidad: -- %"
+                android:textSize="24sp"
+                android:textColor="#333333"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/fondo_tarjeta"
+            android:elevation="12dp"
+            android:padding="32dp"
+            android:layout_marginBottom="48dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚙️ Controles Manuales"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#E65100"
+                android:layout_marginBottom="24dp"/>
+
+            <Switch
+                android:id="@+id/switchVentilador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌬️ Ventilador"
+                android:textSize="24sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="24dp"/>
+
+            <Switch
+                android:id="@+id/switchLuz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 Luz Artificial"
+                android:textSize="24sp"
+                android:textColor="#333333"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Cerrar Sesión"
+            android:textSize="22sp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>
